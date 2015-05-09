@@ -36,4 +36,3 @@ redis-server ${OPENSHIFT_DATA_DIR}/redis-${REDIS_VERSION}/redis.conf
 # Use supervisor to keep node app running after crash
 echo "nohup supervisor $APP_FILE >$LOG_FILE 2>&1 &"
 nohup supervisor -w . $APP_FILE >$LOG_FILE 2>&1 &
-nohup wstunnel -s 8080 -t $REDIS_IP:$REDIS_PORT >$LOG_FILE 2>&1

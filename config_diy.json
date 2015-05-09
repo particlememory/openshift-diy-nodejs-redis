@@ -6,7 +6,7 @@
   },
   "redis": {
     "version": "2.8.19",
-    "port": 16379,
+    "port": 6379,
     "loglevel": "notice",
     "removeOld": true
   }
