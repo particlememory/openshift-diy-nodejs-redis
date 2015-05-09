@@ -53,7 +53,7 @@ app.get('/', function(req, res){
 
 //  Get the environment variables we need.
 var ipaddr  = process.env.OPENSHIFT_DIY_IP;
-var port    = process.env.OPENSHIFT_DIY_PORT || 8080;
+var port    = 12555//process.env.OPENSHIFT_DIY_PORT || 8080;
 
 if (typeof ipaddr === "undefined") {
    console.warn('No OPENSHIFT_INTERNAL_IP environment variable');
